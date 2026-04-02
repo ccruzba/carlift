@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alquiler de Plataformas Elevadoras y Manlift en Colombia | CAR LIFT</title>
     
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    
     <meta name="description" content="CAR LIFT: Expertos con más de 13 años en alquiler de plataformas elevadoras, manlift, tijeras y brazos articulados en Colombia. Soluciones seguras para trabajo en alturas.">
     <meta name="keywords" content="alquiler de plataformas elevadoras, alquiler de manlift, plataformas elevadoras Colombia, alquiler maquinaria trabajo en altura, plataformas tijera alquiler, brazos articulados alquiler">
     <meta name="author" content="CAR LIFT">
@@ -370,13 +372,35 @@
         /* Clients Section */
         .client-logo {
             background: var(--white);
-            padding: 2rem;
+            padding: 1rem;
             text-align: center;
             border-radius: 8px;
             font-weight: 800;
             font-size: 1.5rem;
             color: var(--secondary-color);
             border: 1px solid #E5E7EB;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .client-image {
+            height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+        }
+
+        .client-image img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+
+        .client-content {
+            padding: 1rem;
+            background: var(--white);
         }
 
         /* CTA Section */
@@ -580,9 +604,8 @@
                 </ul>
             </div>
             <div class="text-center">
-                <div style="background-color: var(--light-bg); padding: 4rem; border-radius: 8px; border: 2px dashed var(--secondary-color);">
-                    <i class="fa-solid fa-helmet-safety" style="font-size: 5rem; color: var(--primary-color);"></i>
-                    <h3 style="margin-top: 1rem;">Seguridad en Alturas</h3>
+                <div class="text-center">
+                    <img src="img/chipichape.png" alt="Seguridad en Alturas" style="max-width: 80%; height: auto; border-radius: 8px;">
                 </div>
             </div>
         </div>
@@ -628,7 +651,7 @@
         <div class="grid-3">
             <div class="machine-card">
                 <div style="height: 200px; background-color: var(--light-bg); display: flex; align-items: center; justify-content: center; border-bottom: 3px solid var(--accent-color);">
-                     <i class="fa-solid fa-truck-monster" style="font-size: 4rem; color: var(--secondary-color);"></i>
+                     <img src="img/articulada.png" alt="Brazos Articulados" style="max-width: 100%; height: 150px; object-fit: contain;">
                 </div>
                 <div class="machine-content">
                     <h3>Brazos Articulados</h3>
@@ -643,7 +666,7 @@
 
             <div class="machine-card">
                 <div style="height: 200px; background-color: var(--light-bg); display: flex; align-items: center; justify-content: center; border-bottom: 3px solid var(--accent-color);">
-                     <i class="fa-solid fa-crane" style="font-size: 4rem; color: var(--secondary-color);"></i>
+                     <img src="img/telescopico.png" alt="Brazos Telescópicos" style="max-width: 100%; height: 150px; object-fit: contain;">
                 </div>
                 <div class="machine-content">
                     <h3>Brazos Telescópicos</h3>
@@ -658,7 +681,7 @@
 
             <div class="machine-card">
                 <div style="height: 200px; background-color: var(--light-bg); display: flex; align-items: center; justify-content: center; border-bottom: 3px solid var(--accent-color);">
-                     <i class="fa-solid fa-elevator" style="font-size: 4rem; color: var(--secondary-color);"></i>
+                     <img src="img/tijera.png" alt="Tijeras Eléctricas" style="max-width: 100%; height: 150px; object-fit: contain;">
                 </div>
                 <div class="machine-content">
                     <h3>Tijeras Eléctricas</h3>
@@ -746,16 +769,31 @@
             <h2>Nuestros Clientes</h2>
             <div class="grid-3">
                 <div class="client-logo">
-                    BODEGAS DOLLAR CITY<br>
-                    <span style="font-size: 0.9rem; font-weight: normal;">Acondicionamiento de bodegas nuevas</span>
+                    <div class="client-image">
+                        <img src="img/bodegas-dollarcity.png" alt="Bodegas Dollar City">
+                    </div>
+                    <div class="client-content">
+                        BODEGAS DOLLAR CITY<br>
+                        <span style="font-size: 0.9rem; font-weight: normal;">Acondicionamiento de bodegas nuevas</span>
+                    </div>
                 </div>
                 <div class="client-logo">
-                    BODEGAS ARA<br>
-                    <span style="font-size: 0.9rem; font-weight: normal;">Montaje de estructura</span>
+                    <div class="client-image">
+                        <img src="img/bodegas-ara.png" alt="Bodegas Ara">
+                    </div>
+                    <div class="client-content">
+                        BODEGAS ARA<br>
+                        <span style="font-size: 0.9rem; font-weight: normal;">Montaje de estructura</span>
+                    </div>
                 </div>
                 <div class="client-logo">
-                    PLAZA CLARO<br>
-                    <span style="font-size: 0.9rem; font-weight: normal;">Instalación de valla publicitaria</span>
+                    <div class="client-image">
+                        <img src="img/plaza-claro.png" alt="Plaza Claro">
+                    </div>
+                    <div class="client-content">
+                        PLAZA CLARO<br>
+                        <span style="font-size: 0.9rem; font-weight: normal;">Instalación de valla publicitaria</span>
+                    </div>
                 </div>
             </div>
         </div>
